@@ -19,7 +19,10 @@ public class KlargestElement {
 
 class KlargestElementSolution {
     public int findKthLargest(Integer[] nums, int k) {
-    	PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Comparator.reverseOrder());   	
+    	// Heap Question 
+    	// MIN Heap and MAX Heap 
+    	//PriorityQueue<Integer> pq = new PriorityQueue<Integer>();   //Min Heap
+    	PriorityQueue<Integer> pq = new PriorityQueue<Integer>(Comparator.reverseOrder());   //Max Heap
     	for(int i=0;i<nums.length;i++) {
     		pq.offer(nums[i]);    
     		if(pq.size()>k) {
