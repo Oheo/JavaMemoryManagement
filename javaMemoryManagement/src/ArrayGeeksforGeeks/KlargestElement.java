@@ -37,7 +37,8 @@ class KlargestElementSolution {
     }
 
 	public int findLthLargestUsingArraySorting(Integer[] nums, int k) {
-		Arrays.sort(nums,Collections.reverseOrder());
+		Arrays.sort(nums,Collections.reverseOrder()); 
+		System.out.println(nums);
 		int x=0;
 		for(int i=0;i<k;i++) {
 			x = nums[i];

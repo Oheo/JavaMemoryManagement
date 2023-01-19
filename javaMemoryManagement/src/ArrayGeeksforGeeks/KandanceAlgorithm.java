@@ -3,7 +3,16 @@ package ArrayGeeksforGeeks;
 //{ Driver Code Starts
 /* https://practice.geeksforgeeks.org/problems/
  * kadanes-algorithm-1587115620/1?page=1&difficulty[]=1&category[]
- * =Arrays&curated[]=1&sortBy=submissions*/
+ * =Arrays&curated[]=1&sortBy=submissions
+ * 
+ * 
+ * Problem : Given an array Arr[] of N integers. 
+ * Find the contiguous sub-array(containing at least one number) 
+ * which has the maximum sum and return its sum.
+ * 
+ * 
+ * */
+
 
 import java.util.*;
 import java.lang.*;

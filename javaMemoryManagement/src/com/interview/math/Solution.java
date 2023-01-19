@@ -2,6 +2,7 @@ package com.interview.math;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 public class Solution {
 	
@@ -20,5 +21,7 @@ public class Solution {
 	    }
 	    resh.addAll(rest);
 	    return resh;
+	    
+	    //PriorityQueue<Integer> pq=new PriorityQueue<Integer>();
 	}
 }
