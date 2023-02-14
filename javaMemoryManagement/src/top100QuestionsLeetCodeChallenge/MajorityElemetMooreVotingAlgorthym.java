@@ -12,7 +12,7 @@ public class MajorityElemetMooreVotingAlgorthym {
 		int[] nums3 = {6,5,5};
 		
 		int output =majorityElement(nums1);
-		int output1=majorityElement1(nums1);
+		int output1=majorityElement1(nums3);
 		System.out.println("Majority Element is "+output);	
 		System.out.println("Majority Element is "+output1);	
 
@@ -36,14 +36,15 @@ public class MajorityElemetMooreVotingAlgorthym {
 	}
 	
 	public static int majorityElement1(int[] nums) {
-		int candidate = 0;
-		int count = 0;
-		for (int num : nums) {
-			if (count == 0) {
-				candidate = num;
-			}
-			count = (candidate == num) ? count++ : count--;
-		}	
-		return candidate;
-	}
+        int count = 0;
+        Integer candidate = null;
+
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num;
+            }
+            count += (num == candidate) ? 1 : -1;
+        }
+        return candidate;
+    }
 }
